@@ -15,7 +15,7 @@ function Rig() {
 export default function Model() {
   return (
     <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 160, 160], fov: 20 }}>
-      <fog attach="fog" args={['lightpink', 60, 100]} />
+      <fog attach="fog" args={['black', 60, 100]} />
       <Suspense fallback={null}>
         <ambientLight intensity={0.5} />
         <spotLight position={[50, 50, -30]} castShadow />
@@ -29,7 +29,11 @@ export default function Model() {
     <MeshTransmissionMaterial backside backsideThickness={5} thickness={2} distortionScale={0} temporalDistortion={0} />
   </mesh>
         <Html position={[0, 0, 0]} transform>
-        <p className='hero-txt'>Illuminating the Future Through Innovation and Discovery. Join Us in Shaping Tomorrow!</p>
+        <p className='hero-txt'>Illuminating the Future Through Innovation and Discovery. Join Us in Shaping Tomorrow!
+        <p className='emoji1'>😌</p>
+        <p className='emoji2'>😎</p>
+        <p className='emoji3'>🤪</p>
+        </p>
             </Html>
       </Suspense>
       <OrbitControls makeDefault />

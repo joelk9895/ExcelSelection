@@ -38,7 +38,6 @@ canvas p{
   width: 400px;
   text-align: center;
   text-transform: uppercase;
-  position: absolute;
   z-index: 1;
 }
 canvas{
@@ -72,8 +71,35 @@ nav{
   text-transform: uppercase;
   position: absolute;
   z-index: 1;
-  top: 0;
   transform: translate(-50%, -50%);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; 
+  cursor: pointer;
+}
+.hero-txt:active{
+  cursor: pointer;
+}
+.emoji1{
+  position: absolute;
+  top: 0;
+  right: -50px;
+  transform: rotateZ(20deg);
+  font-size: 5rem;
+}
+.emoji2{
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  transform: rotateZ(-20deg);
+  font-size: 5rem;
+}
+.emoji3{
+  position: absolute;
+  bottom: -3rem;
+  right: 0;
+  transform: rotateZ(40deg);
+  font-size: 5rem;
 }
 #Register{
   font-size: 1.5rem;
