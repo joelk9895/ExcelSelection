@@ -24,10 +24,7 @@ export default function Home() {
   };
 
   const handleclick = () => {
-    if (navigator.vibrate) {
-      // vibration API supported
-        navigator.vibrate([100,300,100]);
-    }
+    navigator.vibrate([100,300,100]);
     alert(
       `Made it in a hurry, Hope You liked it!😌 \nCheck joelkgeorge.vercel.app or joelkgeorge.tech to see my portfolio`
     );
