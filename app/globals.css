@@ -28,6 +28,13 @@ main{
   border-radius: 30px;
   position: relative;
 }
+.timer{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: white;
+  font-family: sans-serif;
+}
 footer{
   z-index: 1000;
 }

@@ -1,19 +1,45 @@
 "use client"
-import Model, { } from "./component/Knot"
-import localFont from 'next/font/local'
+import React, { useEffect, useState } from 'react';
+import Model from './component/Knot';
+import localFont from 'next/font/local';
 
-
-const myFont = localFont({ src: './font.otf' })
+const myFont = localFont({ src: './font.otf' });
 
 export default function Home() {
+  const [timer, setTimer] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer((prevTimer) => prevTimer + 100); // Increment by 100 milliseconds
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+  const formatTime = (time: number) => {
+    const minutes = Math.floor(time / 60000);
+    const seconds = Math.floor((time % 60000) / 1000);
+    const milliseconds = time % 1000;
+
+    return `${minutes}:${seconds.toString().padStart(2, '0')}:${milliseconds.toString().padStart(3, '0')}`;
+  };
+
   const handleclick = () => {
-    alert("Made it in a hurry, Hope You liked it!😌 \n" + "Check joelkgeorge.vercel.app or joelkgeorge.tech to see my portfolio")
-  }
+    if (navigator.vibrate) {
+      // vibration API supported
+        navigator.vibrate([100,300,100]);
+    }
+    alert(
+      `Made it in a hurry, Hope You liked it!😌 \nCheck joelkgeorge.vercel.app or joelkgeorge.tech to see my portfolio`
+    );
+  };
+
   return (
     <main>
       <div className="filler3"></div>
       <div className="filler4"></div>
-      <nav><h1>TechNova</h1></nav>
+      <nav>
+        <h1>TechNova</h1>
+      </nav>
       <div className="lander">
         <div className="box1"></div>
         <div className="box2"></div>
@@ -23,14 +49,24 @@ export default function Home() {
           <div className="recording-circle"></div>
           <div className="recording-text">Recording</div>
         </div>
-        <Model />
+        <Model/>
+        <div className="timer"> {formatTime(timer)}</div>
       </div>
-      <button className={myFont.className} id="Register" onClick={handleclick}>Register</button>
+      <button className={myFont.className} id="Register" onClick={handleclick}>
+        Register
+      </button>
       <footer>
-        <p>Made by <a href="https://joelkgeorge.tech"
-          target="_blank" rel="noopener noreferrer"
-        >Joel K George</a></p>
+        <p>
+          Made by{' '}
+          <a
+            href="https://joelkgeorge.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Joel K George
+          </a>
+        </p>
       </footer>
     </main>
-  )
+  );
 }
