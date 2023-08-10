@@ -15,6 +15,14 @@ export default function Home() {
       <div className="filler4"></div>
       <nav><h1>TechNova</h1></nav>
       <div className="lander">
+        <div className="box1"></div>
+        <div className="box2"></div>
+        <div className="box3"></div>
+        <div className="box4"></div>
+        <div className="record">
+          <div className="recording-circle"></div>
+          <div className="recording-text">Recording</div>
+        </div>
         <Model />
       </div>
       <button className={myFont.className} id="Register" onClick={handleclick}>Register</button>
