@@ -12,7 +12,6 @@ function Rig() {
 }
 
 export default function Model() {
-
   return (
     <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 160, 160], fov: 20 }}>
       <fog attach="fog" args={['black', 60, 100]} />

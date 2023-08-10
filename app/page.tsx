@@ -24,7 +24,9 @@ export default function Home() {
   };
 
   const handleclick = () => {
-    navigator.vibrate([100,300,100]);
+    if (navigator.vibrate) {
+        navigator.vibrate([100,300,100]);
+    }
     alert(
       `Made it in a hurry, Hope You liked it!😌 \nCheck joelkgeorge.vercel.app or joelkgeorge.tech to see my portfolio`
     );
