@@ -24,7 +24,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: rgb(71, 74, 255);
   border-radius: 30px;
   position: relative;
 }

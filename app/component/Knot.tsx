@@ -2,7 +2,7 @@
 import * as THREE from 'three'
 import { Suspense, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { OrbitControls, CameraShake, Environment, MeshTransmissionMaterial, Html } from '@react-three/drei'
+import { OrbitControls, CameraShake, Environment, MeshTransmissionMaterial, Html, ContactShadows } from '@react-three/drei'
 
 
 function Rig() {
@@ -24,6 +24,7 @@ export default function Model() {
         <directionalLight position={[0, -5, 0]} color="white" intensity={2} />
         <Environment preset="warehouse" />
         <Rig />
+        <ContactShadows scale={100} position={[0, -7.5, 0]} blur={1} far={100} opacity={0.5} />
         <mesh receiveShadow castShadow>
     <torusKnotGeometry args={[3, 1, 256, 32]} />
     <MeshTransmissionMaterial backside backsideThickness={5} thickness={2} distortionScale={0} temporalDistortion={0} />
