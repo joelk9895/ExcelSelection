@@ -28,6 +28,9 @@ main{
   border-radius: 30px;
   position: relative;
 }
+footer{
+  z-index: 1000;
+}
 canvas p{
   font-size: 3rem;
   color: rgb(255, 255, 255);
