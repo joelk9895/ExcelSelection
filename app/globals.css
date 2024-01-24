@@ -1,4 +1,4 @@
-main{
+main {
   height: fit-content;
   width: 100%;
   overflow-x: hidden;
@@ -9,16 +9,16 @@ main{
   flex-direction: column;
   gap: 20px;
   background-size: 100px 100px;
-  background-image:
-    linear-gradient(to right, #d4d4d4 1px, transparent 1px),
+  background-image: linear-gradient(to right, #d4d4d4 1px, transparent 1px),
     linear-gradient(to bottom, #d4d4d4 1px, transparent 1px);
+  padding: 0;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.lander{
+.lander {
   height: 75vh;
   width: 90%;
   display: flex;
@@ -28,17 +28,17 @@ main{
   border-radius: 30px;
   position: relative;
 }
-.timer{
+.timer {
   position: absolute;
   bottom: 5%;
   left: 5%;
   color: white;
   font-family: sans-serif;
 }
-footer{
+footer {
   z-index: 1000;
 }
-canvas p{
+canvas p {
   font-size: 3rem;
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -47,14 +47,14 @@ canvas p{
   text-transform: uppercase;
   z-index: 1;
 }
-canvas{
+canvas {
   background: transparent;
 }
-h1{
+h1 {
   font-size: 2rem;
   z-index: 1000;
 }
-nav{
+nav {
   width: 100%;
   color: black;
   padding: 20px 30px;
@@ -63,13 +63,13 @@ nav{
   display: flex;
   justify-content: center;
 }
-.widget{
+.widget {
   z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
 }
-.hero-txt{
+.hero-txt {
   font-size: 3rem;
   color: white;
   font-weight: 600;
@@ -81,34 +81,50 @@ nav{
   transform: translate(-50%, -50%);
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; 
+  user-select: none;
   cursor: pointer;
 }
-.hero-txt:active{
+.hero-txt:active {
   cursor: pointer;
 }
-.emoji1{
+.emoji1 {
   position: absolute;
   top: 0;
   right: -50px;
   transform: rotateZ(20deg);
   font-size: 5rem;
 }
-.emoji2{
+.emoji2 {
   position: absolute;
   bottom: 30px;
-  left: 0;
+  left: -30px;
   transform: rotateZ(-20deg);
   font-size: 5rem;
 }
-.emoji3{
+.about {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+}
+.about p {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin-top: 3rem;
+  font-weight: 100;
+  width: 50vh;
+  text-align: center;
+}
+.emoji3 {
   position: absolute;
   bottom: -3rem;
   right: 0;
   transform: rotateZ(40deg);
   font-size: 5rem;
 }
-#Register{
+#Register {
   font-size: 1.5rem;
   background: black;
   color: white;
@@ -121,7 +137,7 @@ nav{
   z-index: 1;
   margin-bottom: 10vh;
 }
-.record{
+.record {
   position: absolute;
   top: 5%;
   right: 5%;
@@ -131,7 +147,7 @@ nav{
   background: #1f1f1f;
   border-radius: 5px;
 }
-.box1{
+.box1 {
   position: absolute;
   top: 3%;
   left: 4%;
@@ -140,7 +156,7 @@ nav{
   border-left: white solid 2px;
   border-top: white solid 2px;
 }
-.box2{
+.box2 {
   position: absolute;
   top: 3%;
   right: 4%;
@@ -149,7 +165,7 @@ nav{
   border-right: white solid 2px;
   border-top: white solid 2px;
 }
-.box3{
+.box3 {
   position: absolute;
   bottom: 3%;
   left: 4%;
@@ -158,7 +174,7 @@ nav{
   border-left: white solid 2px;
   border-bottom: white solid 2px;
 }
-.box4{
+.box4 {
   position: absolute;
   bottom: 3%;
   right: 4%;
@@ -174,7 +190,6 @@ nav{
   border-radius: 50%;
   animation: ease pulse 2s infinite;
   margin-right: 0.25em;
-
 }
 
 .recording-text {
@@ -196,7 +211,7 @@ nav{
   }
 }
 
-.filler{
+.filler {
   height: 15vh;
   width: 15vh;
   border-radius: 50%;
@@ -210,39 +225,32 @@ nav{
   position: absolute;
   bottom: -1px;
   left: 30%;
-
 }
-body{
+body {
   position: relative;
 }
 .back-circles {
   filter: blur(60px);
   position: absolute;
 }
-.first{
+.first {
   left: 0;
 }
-.second{
+.second {
   right: 0;
 }
 .filler1 {
   position: absolute;
   top: 0;
   background: linear-gradient(to bottom, #ffff, transparent);
-  height: 20%;
+  height: 20vh;
   width: 100%;
 }
-.filler2 {
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(to top, #ffff, transparent);
-  height: 20%;
-  width: 100%;
-}
+
 .filler3 {
   position: absolute;
   right: 0;
-  background: linear-gradient(to left, #ffff, transparent);
+  background: linear-gradient(to left, #ffff, transparent, #ffff);
   height: 100vh;
   width: 5%;
   z-index: 100;
@@ -254,4 +262,270 @@ body{
   height: 100vh;
   width: 5%;
   z-index: 100;
+}
+.pricing {
+  min-height: 120vh;
+  height: fit-content;
+  background: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 20px 60px 70px rgba(0, 0, 0, 0.748);
+  z-index: 100;
+}
+.pricing h2 {
+  font-size: 3rem;
+  margin-top: 10%;
+  margin-bottom: 0;
+  height: fit-content;
+  color: transparent;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #f5f5f5a4, #f5f5f5dd, #f5f5f57c);
+
+  -webkit-background-clip: text;
+}
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  margin-top: 10%;
+  height: fit-content;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  width: 30vw;
+  min-width: 300px;
+  height: 40vh;
+  padding: 20px;
+
+  border-radius: 20px;
+  color: #f5f5f5;
+}
+.pricinginfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.price {
+  font-size: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.offer {
+  background-color: rgb(239, 85, 42);
+  width: 300px;
+  height: 150px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: absolute;
+  top: 10%;
+  rotate: -10deg;
+}
+.offer p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+.offer p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.countdown {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.month {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff5b;
+  font-family: sans-serif;
+  text-decoration: line-through;
+}
+.essentials {
+  background-image: radial-gradient(
+    150% 150% at 3% -45%,
+    rgba(255, 255, 255, 0.32) 0px,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  position: absolute;
+  border: rgba(255, 255, 255, 0.336) solid 0.1px;
+}
+.pro {
+  background-image: radial-gradient(
+      213% 213% at 5% -9%,
+      rgba(75, 39, 255, 0.1) 0px,
+      rgba(54, 28, 182, 0.1) 8.6%,
+      rgba(55, 31, 175, 0.09) 15.6%,
+      rgba(59, 32, 192, 0.09) 23.9%,
+      rgba(49, 27, 159, 0.08) 30.9%,
+      rgba(45, 24, 148, 0.07) 37.4%,
+      rgba(44, 27, 130, 0.06) 43.8%,
+      rgba(39, 22, 121, 0.05) 50%,
+      rgba(43, 23, 141, 0.04) 56.2%,
+      rgba(37, 20, 120, 0.03) 62.6%,
+      rgba(39, 21, 131, 0.02) 69.2%,
+      rgba(75, 39, 255, 0.01) 76.1%,
+      rgba(10, 6, 32, 0.01) 79.2%,
+      transparent 100%
+    ),
+    radial-gradient(
+      150% 150% at 3% -45%,
+      rgba(255, 255, 255, 0.12) 0px,
+      rgba(255, 255, 255, 0) 100%
+    );
+  opacity: 1;
+  filter: saturate(2);
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  position: absolute;
+  border: rgba(30, 15, 63, 0.336) solid 0.1px;
+}
+.enterprise {
+  background-image: radial-gradient(
+      213% 213% at 5% -9%,
+      rgba(38, 134, 190, 0.1) 0px,
+      rgba(38, 133, 189, 0.1) 8.6%,
+      rgba(37, 130, 185, 0.09) 16.6%,
+      rgba(36, 126, 178, 0.09) 23.9%,
+      rgba(34, 120, 170, 0.08) 30.9%,
+      rgba(32, 113, 160, 0.07) 37.4%,
+      rgba(30, 104, 148, 0.06) 43.8%,
+      rgba(27, 95, 134, 0.05) 50%,
+      rgba(24, 84, 119, 0.04) 56.2%,
+      rgba(21, 72, 103, 0.03) 62.6%,
+      rgba(17, 60, 85, 0.02) 69.2%,
+      rgba(13, 46, 65, 0.01) 76.1%,
+      transparent 100%
+    ),
+    radial-gradient(
+      150% 150% at 3% -45%,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0) 100%
+    );
+  filter: saturate(2);
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  position: absolute;
+  border: rgba(8, 32, 44, 0.336) solid 0.1px;
+}
+.pricing-card2 {
+  background-image: linear-gradient(
+    151deg,
+    rgb(155, 128, 255) 28%,
+    rgb(61, 26, 192) 105%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pricing-card3 {
+  background-image: linear-gradient(
+    151deg,
+    rgb(0, 212, 230) 28%,
+    rgb(31, 171, 218) 105%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circleContainer {
+  background-color: red;
+  position: relative;
+  height: 100px;
+  margin-bottom: 150px;
+}
+.circle {
+  height: 1550%;
+  width: 120%;
+  left: -10%;
+  border-radius: 0 0 50% 50%;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+}
+.contact {
+  background-color: rgb(71, 74, 255);
+  height: 100vh;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  z-index: 0;
+}
+.contactSvg {
+  position: absolute;
+  top: 30%;
+  left: 100%;
+}
+.button {
+  width: 180px;
+  height: 180px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.title {
+  border-bottom: 1px solid rgb(134, 134, 134);
+  padding-bottom: 100px;
+  width: 80vw;
+  margin-left: 200px;
+  margin-right: 200px;
+  position: relative;
+  margin-bottom: 200px;
+  color: white;
+}
+.buttonContainer {
+  position: absolute;
+  left: calc(100% - 400px);
+  top: calc(100% - 75px);
+}
+.mail {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  font-size: 1.23rem;
+}
+.info {
+  display: flex;
+  gap: 3rem;
+  width: 80vw;
 }
