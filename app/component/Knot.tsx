@@ -60,7 +60,7 @@ export default function Model() {
 
         <Html position={[0, 0, 0]} transform>
           <p className="hero-txt">
-            Every visionary&abpos;s secret sauce to sucess
+            Every visionary&apos;s secret sauce to sucess
             <p className="emoji1">😌</p>
             <p className="emoji2">😎</p>
             <p className="emoji3">🤪</p>
