@@ -111,7 +111,7 @@ export default function Home() {
               <div className="enterprise"></div>
               <h3 className="pricing-card3">Enterprise</h3>
               <div className="pricinginfo">
-                <p className="price">Let's talk</p>
+                <p className="price">Let&abpos;s talk</p>
                 <p className="month"></p>
               </div>
               <p className="pricing-card3">For serious online businesses</p>
