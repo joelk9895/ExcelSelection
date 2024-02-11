@@ -90,23 +90,23 @@ export default function Home() {
               <div className="essentials"></div>
               <h3 className="pricing-card1 ">Landing page</h3>
               <div className="pricinginfo">
-                <p className="price">₹2999</p>
-                <p className="month">₹4999</p>
+                <p className="price">₹4999</p>
+                <p className="month">₹7999</p>
               </div>
 
               <p className="pricing-card1">
                 For businesses who wants to go online
               </p>
             </div>
-            <div className="pricing-card">
+            {/* <div className="pricing-card">
               <div className="pro"></div>
               <h3 className="pricing-card2">Landing + 2 pages</h3>
               <div className="pricinginfo">
-                <p className="price">₹4999</p>
+                <p className="price">₹7999</p>
                 <p className="month">₹9999</p>
               </div>
               <p className="pricing-card2">For businesses who works hybrid</p>
-            </div>
+            </div> */}
             <div className="pricing-card">
               <div className="enterprise"></div>
               <h3 className="pricing-card3">Enterprise</h3>
@@ -116,10 +116,6 @@ export default function Home() {
               </div>
               <p className="pricing-card3">For serious online businesses</p>
             </div>
-          </div>
-          <div className="countdown">
-            <div className="countdown-text">Early bird Offer ends in</div>
-            <div className="countdown-timer">12:00:00:00</div>
           </div>
         </div>
       </section>
